@@ -6,7 +6,7 @@ deploy:
   provider: pages
   skip_cleanup: true
   github_token: $GITHUB_TOKEN # Set in travis-ci.org dashboard
+  target_branch: master
   on:
     branch: src
     local_dir: dist
-    target_branch: master
