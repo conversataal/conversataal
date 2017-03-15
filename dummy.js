@@ -1,1 +1,0 @@
-console.log('This file just exists to have a stub for building on travis-ci.org');

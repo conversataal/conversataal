@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "sources for conversataal.github.io",
   "scripts": {
-    "dist": "node dummy.js"
+    "dist": "hexo generate"
   },
   "repository": {
     "type": "git",
