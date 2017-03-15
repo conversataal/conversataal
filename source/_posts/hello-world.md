@@ -5,6 +5,8 @@ Welcome to [Hexo](https://hexo.io/)! This is your very first post. Check [docume
 
 ## Quick Start
 
+Testing auto deploy!
+
 ### Create a new post
 
 ``` bash
