@@ -1,6 +1,9 @@
 # Conversataal
 sources for github.io
 
+http://materializecss.com/getting-started.html
+http://materializecss.com/templates/parallax-template/preview.html
+
 # Dev
 
 in src branch
