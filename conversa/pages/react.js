@@ -18,7 +18,7 @@ export default class ReactComponent extends React.Component {
 
   render () {
     return (
-      <div>
+      <div className="container">
         <Helmet
           title={`${config.siteTitle} | React.js components`} 
         />

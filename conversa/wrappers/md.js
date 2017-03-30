@@ -12,7 +12,7 @@ module.exports = React.createClass({
   render () {
     const post = this.props.route.page.data
     return (
-      <div className="markdown">
+      <div className="markdown container">
         <Helmet
           title={`${config.siteTitle} | ${post.title}`}
         />

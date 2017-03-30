@@ -19,9 +19,7 @@ module.exports = React.createClass({
   render () {
     return (
       <div>
-        <Headroom
-
-        >
+        <Headroom>
           <nav className="white" role="navigation">
             <div className="nav-wrapper container">
               <Link
@@ -41,6 +39,7 @@ module.exports = React.createClass({
             </div>
           </nav>
         </Headroom>
+
         {this.props.children}
 
         {/*<Container
@@ -59,25 +58,26 @@ module.exports = React.createClass({
               <div className="col l6 s12">
                 <h5 className="white-text">Company Bio</h5>
                 <p className="grey-text text-lighten-4">We are a team of college students working on this project like it's our full time job. Any amount would help support and continue development on this project and is greatly appreciated.</p>
-
-
               </div>
               <div className="col l3 s12">
-                <h5 className="white-text">Settings</h5>
+                <h5 className="white-text">Supported file types</h5>
                 <ul>
-                  <li><a className="white-text" href="#!">Link 1</a></li>
-                  <li><a className="white-text" href="#!">Link 2</a></li>
-                  <li><a className="white-text" href="#!">Link 3</a></li>
-                  <li><a className="white-text" href="#!">Link 4</a></li>
+                  <li><Link className="white-text" to={prefixLink('/markdown/markdown/')}>Markdown</Link></li>
+                  <li><Link className="white-text" to={prefixLink('/toml/toml/')}>toml</Link></li>
+                  <li><Link className="white-text" to={prefixLink('/yaml/yaml/')}>yaml</Link></li>
+                  <li><Link className="white-text" to={prefixLink('/html/html/')}>html</Link></li>
+                  <li><Link className="white-text" to={prefixLink('/react/')}>JSX (React components)</Link></li>
+                  <li><Link className="white-text" to={prefixLink('/coffee-react/')}>CJSX (Coffeescript React components)</Link></li>
+                  <li><Link className="white-text" to={prefixLink('/json/')}>JSON</Link></li>
                 </ul>
               </div>
               <div className="col l3 s12">
-                <h5 className="white-text">Connect</h5>
+                <h5 className="white-text">Supported CSS processors</h5>
                 <ul>
-                  <li><a className="white-text" href="#!">Link 1</a></li>
-                  <li><a className="white-text" href="#!">Link 2</a></li>
-                  <li><a className="white-text" href="#!">Link 3</a></li>
-                  <li><a className="white-text" href="#!">Link 4</a></li>
+                  <li><Link className="white-text" to={prefixLink('/postcss/')}>PostCSS</Link></li>
+                  <li><Link className="white-text" to={prefixLink('/css-modules/')}>CSS Modules</Link></li>
+                  <li><Link className="white-text" to={prefixLink('/sass/')}>Sass</Link></li>
+                  <li><Link className="white-text" to={prefixLink('/less/')}>Less</Link></li>
                 </ul>
               </div>
             </div>

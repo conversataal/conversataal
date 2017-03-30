@@ -12,7 +12,7 @@ module.exports = React.createClass({
   render () {
     const data = this.props.route.page.data
     return (
-      <div>
+      <div className="toml-container container">
         <Helmet
           title={`${config.siteTitle} | ${data.title}`} 
         />

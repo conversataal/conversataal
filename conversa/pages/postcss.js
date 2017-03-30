@@ -6,7 +6,7 @@ import { config } from 'config'
 export default class PostCSS extends React.Component {
   render () {
     return (
-      <div>
+      <div className="container">
         <Helmet
           title={`${config.siteTitle} | Hi PostCSSy friends`} 
         />
