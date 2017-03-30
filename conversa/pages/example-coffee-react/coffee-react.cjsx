@@ -13,7 +13,7 @@ module.exports = React.createClass
     @setState count: @state.count - 1
 
   render: ->
-    <div>
+    <div className="container">
       <Helmet
         title={config.config.siteTitle + ' | Coffeescript React.js components'} 
       />

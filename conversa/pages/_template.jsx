@@ -60,24 +60,24 @@ module.exports = React.createClass({
                 <p className="grey-text text-lighten-4">We are a team of college students working on this project like it's our full time job. Any amount would help support and continue development on this project and is greatly appreciated.</p>
               </div>
               <div className="col l3 s12">
-                <h5 className="white-text">Supported file types</h5>
+                <h5 className="white-text">Example types</h5>
                 <ul>
-                  <li><Link className="white-text" to={prefixLink('/markdown/markdown/')}>Markdown</Link></li>
-                  <li><Link className="white-text" to={prefixLink('/toml/toml/')}>toml</Link></li>
-                  <li><Link className="white-text" to={prefixLink('/yaml/yaml/')}>yaml</Link></li>
-                  <li><Link className="white-text" to={prefixLink('/html/html/')}>html</Link></li>
-                  <li><Link className="white-text" to={prefixLink('/react/')}>JSX (React components)</Link></li>
-                  <li><Link className="white-text" to={prefixLink('/coffee-react/')}>CJSX (Coffeescript React components)</Link></li>
-                  <li><Link className="white-text" to={prefixLink('/json/')}>JSON</Link></li>
+                  <li><Link className="white-text" to={prefixLink('/example-markdown/markdown/')}>Markdown</Link></li>
+                  <li><Link className="white-text" to={prefixLink('/example-toml/toml/')}>TOML</Link></li>
+                  <li><Link className="white-text" to={prefixLink('/example-yaml/yaml/')}>YAML</Link></li>
+                  <li><Link className="white-text" to={prefixLink('/example-html/html/')}>HTML</Link></li>
+                  <li><Link className="white-text" to={prefixLink('/example-react/react/')}>JSX (React components)</Link></li>
+                  <li><Link className="white-text" to={prefixLink('/example-coffee-react/coffee-react/')}>CJSX (Coffeescript React components)</Link></li>
+                  <li><Link className="white-text" to={prefixLink('/example-json/json/')}>JSON</Link></li>
                 </ul>
               </div>
               <div className="col l3 s12">
-                <h5 className="white-text">Supported CSS processors</h5>
+                <h5 className="white-text">Example CSS</h5>
                 <ul>
-                  <li><Link className="white-text" to={prefixLink('/postcss/')}>PostCSS</Link></li>
-                  <li><Link className="white-text" to={prefixLink('/css-modules/')}>CSS Modules</Link></li>
-                  <li><Link className="white-text" to={prefixLink('/sass/')}>Sass</Link></li>
-                  <li><Link className="white-text" to={prefixLink('/less/')}>Less</Link></li>
+                  <li><Link className="white-text" to={prefixLink('/example-postcss/postcss/')}>PostCSS</Link></li>
+                  <li><Link className="white-text" to={prefixLink('/example-css-modules/css-modules/')}>CSS Modules</Link></li>
+                  <li><Link className="white-text" to={prefixLink('/example-sass/sass/')}>Sass</Link></li>
+                  <li><Link className="white-text" to={prefixLink('/example-less/less/')}>Less</Link></li>
                 </ul>
               </div>
             </div>

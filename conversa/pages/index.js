@@ -3,7 +3,7 @@ import { Link } from 'react-router';
 import { prefixLink } from 'gatsby-helpers';
 import Helmet from 'react-helmet';
 import { config } from 'config';
-import background1Img from '../img/background1.jpg';
+import bgParallaxImg from '../img/bg-parallax.jpg';
 import $ from 'jquery';
 import 'materialize-css/dist/js/materialize.js';
 
@@ -45,7 +45,7 @@ export default class Index extends React.Component {
 
             </div>
           </div>
-          <div className="parallax"><img src={prefixLink(background1Img)} alt="Unsplashed background img 1"/></div>
+          <div className="parallax"><img src={prefixLink(bgParallaxImg)} alt="Unsplashed background img 1"/></div>
         </div>
 
         <div className="container">
@@ -90,7 +90,7 @@ export default class Index extends React.Component {
               </div>
             </div>
           </div>
-          <div className="parallax"><img src={prefixLink(background1Img)} alt="Unsplashed background img 2"/></div>
+          <div className="parallax"><img src={prefixLink(bgParallaxImg)} alt="Unsplashed background img 2"/></div>
         </div>
 
         <div className="container">
@@ -116,7 +116,7 @@ export default class Index extends React.Component {
               </div>
             </div>
           </div>
-          <div className="parallax"><img src={prefixLink(background1Img)} alt="Unsplashed background img 3"/></div>
+          <div className="parallax"><img src={prefixLink(bgParallaxImg)} alt="Unsplashed background img 3"/></div>
         </div>
 
 
