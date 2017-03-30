@@ -7,8 +7,6 @@ http://materializecss.com/templates/parallax-template/preview.html
 ## TODO
 
 * menu bar bottom margin
-* Move "pages" to component dirs, e.g. less.js to pages/less/less.js, conform component driven development
-* Fix content/bg image
 * first deploy
 * Remove jquery dependency for parallax scroll and for menu
 
