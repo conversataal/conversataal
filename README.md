@@ -39,7 +39,6 @@ To run in maintenance mode:
 
 * In .travis.yml set
 ```
-#script: npm run build
 deploy:
   ...
   local_dir: maintenance
