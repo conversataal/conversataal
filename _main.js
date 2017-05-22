@@ -10273,20 +10273,18 @@ Elm.Index.make = function (_elm) {
    $Basics = Elm.Basics.make(_elm),
    $Debug = Elm.Debug.make(_elm),
    $Html = Elm.Html.make(_elm),
-   $Html$Attributes = Elm.Html.Attributes.make(_elm),
    $List = Elm.List.make(_elm),
    $Maybe = Elm.Maybe.make(_elm),
    $Result = Elm.Result.make(_elm),
    $Signal = Elm.Signal.make(_elm),
    $Users = Elm.Users.make(_elm);
    var _op = {};
+   var pageContent = A2($Html.div,_U.list([]),_U.list([$Html.text("hoi")]));
+   var pageHeader = A2($Html.header,_U.list([]),_U.list([$Html.text("header")]));
+   var htmlWrapper = function (content) {    return A2($Html.body,_U.list([]),_U.list([pageHeader,content]));};
+   var view = htmlWrapper(pageContent);
    var viewWelcome = function (user) {    return $Html.text(A2($Basics._op["++"],"Welcome to ",A2($Basics._op["++"],user.name,"\'s page!")));};
-   var view = A2($Html.div,
-   _U.list([]),
-   _U.list([A2($Html.a,_U.list([$Html$Attributes.href("blog/index.html")]),_U.list([$Html.text("Click me to go to the blog!")]))
-           ,$Html.text(" This is an example index page ")
-           ,A2($Html.div,_U.list([]),_U.list([viewWelcome($Users.noah)]))]));
-   return _elm.Index.values = {_op: _op,viewWelcome: viewWelcome,view: view};
+   return _elm.Index.values = {_op: _op,viewWelcome: viewWelcome,pageHeader: pageHeader,htmlWrapper: htmlWrapper,pageContent: pageContent,view: view};
 };
 var make = function make(localRuntime) {
     localRuntime.Native = localRuntime.Native || {};
