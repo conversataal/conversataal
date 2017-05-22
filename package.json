@@ -17,8 +17,8 @@
   "license": "MIT",
   "main": "n/a",
   "scripts": {
-    "build": "gatsby build",
-    "deploy": "gatsby build --prefix-links && gh-pages -d public",
+    "build": "python3 crawl.py && http-server output/",
+    "deploy": "",
     "develop": "gatsby develop",
     "test": "echo \"Error: no test specified\" && exit 1"
   }

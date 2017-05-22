@@ -156,7 +156,7 @@ function executeBash(filename) {
 }
 
 function main() {
-    var files = listFiles('examples/').map(cleanUp);
+    var files = listFiles('app/').map(cleanUp);
 
     generate_vdom(files, 'output/');
 }

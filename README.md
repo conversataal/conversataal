@@ -6,24 +6,31 @@ http://materializecss.com/templates/parallax-template/preview.html
 
 ## TODO
 
-* menu bar bottom margin
-* first deploy
-* Remove jquery dependency for parallax scroll and for menu
+* rename output to dist/public?
 
+* design: http://www.acmethemes.com/demo/?theme=education-base
+* palettes
+    * purple http://paletton.com/palette.php?uid=13Z0u0klhjZbstNgNohpZf3vr9S
+    * red http://paletton.com/palette.php?uid=1000u0kpxmlgGuvlxq1tsibBicS
 
 # Dev
 
+Installation:
+
+* nvm use 7.10.0
+* npm i
+* elm-package install (requires npm i -g elm@0.16.0)
+
 in src branch
 
-* in \conversa
-* `yarn`
-* `gatsby develop`
+* run `python3 crawl.py`
+* in /output run `http-server`
 * open http://localhost:8000
 
 build
 
-* manual: `gatsby build` && `gatsby serve-build`, result in /public
-* CI: .travis.yml calls `tsby build`
+* manual: `python3 crawl.py`, result in /output
+* CI: ???
 
 # Ops
 

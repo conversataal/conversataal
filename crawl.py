@@ -126,8 +126,8 @@ def make_executable(path):
     os.chmod(path, mode)
 
 def main():
-    print('calling examples')
-    without_dots = [clean_up(example) for example in build_up('examples')]
+    print('calling app dir')
+    without_dots = [clean_up(item) for item in build_up('app')]
 
     generate_vdom(without_dots, basedir='output/')
 
