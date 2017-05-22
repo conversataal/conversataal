@@ -6,8 +6,6 @@ http://materializecss.com/templates/parallax-template/preview.html
 
 ## TODO
 
-* rename output to dist/public?
-
 * design: http://www.acmethemes.com/demo/?theme=education-base
 * palettes
     * purple http://paletton.com/palette.php?uid=13Z0u0klhjZbstNgNohpZf3vr9S
@@ -24,12 +22,12 @@ Installation:
 in src branch
 
 * run `python3 crawl.py`
-* in /output run `http-server`
+* run `http-server public/`
 * open http://localhost:8000
 
 build
 
-* manual: `python3 crawl.py`, result in /output
+* manual: `python3 crawl.py`, result in /public
 * CI: ???
 
 # Ops

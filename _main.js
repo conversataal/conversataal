@@ -10327,5 +10327,5 @@ Elm.Renderer.make = function (_elm) {
 };
 var fs = require('fs');
 var elm = Elm.worker(Elm.Renderer);
-fs.writeFile('output/index.html', elm.ports['index']);
-fs.writeFile('output/blog/index.html', elm.ports['blogindex']);
+fs.writeFile('public/index.html', elm.ports['index']);
+fs.writeFile('public/blog/index.html', elm.ports['blogindex']);

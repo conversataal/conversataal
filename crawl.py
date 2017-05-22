@@ -129,7 +129,7 @@ def main():
     print('calling app dir')
     without_dots = [clean_up(item) for item in build_up('app')]
 
-    generate_vdom(without_dots, basedir='output/')
+    generate_vdom(without_dots, basedir='public/')
 
 if __name__ == '__main__':
     main()
