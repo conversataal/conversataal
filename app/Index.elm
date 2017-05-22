@@ -1,6 +1,7 @@
 module Hello exposing (..)
 
-import Html exposing (Html, div, text, program)
+import Html exposing (Html, div, text, program, header)
+import Html.Attributes exposing (style)
 
 add : Int -> Int -> Int
 add x y =
@@ -22,10 +23,33 @@ type Msg
 
 
 -- VIEW
+pageHeader : Html Msg
+pageHeader =
+    header
+        [
+        style
+            [
+                ("backgroundColor", "red")
+            ]
+        ]
+        [ text "header" ]
+
+{-
+header
+    contact-info tel.nr, mail, social media
+    menu logo, links
+a photo
+3 blocks
+-}
 view : Model -> Html Msg
 view model =
     div []
-        [ text ("Hello " ++ toString(add 1 3)) ]
+        [
+        pageHeader
+        , div
+            []
+            [ text ("Hello " ++ toString(add 1 3)) ]
+        ]
 
 
 -- UPDATE
