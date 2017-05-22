@@ -5,7 +5,7 @@ import React from 'react';
 import {prefixLink} from 'gatsby-helpers';
 import Helmet from 'react-helmet';
 import {config} from 'config';
-import sliderBgImg from '../img/bg-parallax.jpg';
+//import sliderBgImg from '../img/bg-parallax.jpg';
 import './index-banner.scss';
 
 // $.fn.parallax = function () {
@@ -89,9 +89,6 @@ export default class Index extends React.Component {
             <div>
                 <div id="index-banner" style={{width: '100%'}}>
                     <div className="background"></div>
-                    {/*<img src={prefixLink(sliderBgImg)} alt="Background image"
-                         style={{height: '400px', width: '100%'}}/>*/}
-
                     <div className="section no-pad-bot" style={{marginTop: '-600px'}}>
                         <div className="container">
                             <br/><br/>
@@ -182,8 +179,8 @@ export default class Index extends React.Component {
                             </div>
                         </div>
                     </div>
-                    <div className="parallax"><img src={prefixLink(sliderBgImg)} alt="Unsplashed background img 2"/>
-                    </div>
+                    {/*<div className="parallax"><img src={prefixLink(sliderBgImg)} alt="Unsplashed background img 2"/>
+                    </div>*/}
                 </div>
 
                 <div className="container">
@@ -217,8 +214,8 @@ export default class Index extends React.Component {
                             </div>
                         </div>
                     </div>
-                    <div className="parallax"><img src={prefixLink(sliderBgImg)} alt="Unsplashed background img 3"/>
-                    </div>
+                    {/*<div className="parallax"><img src={prefixLink(sliderBgImg)} alt="Unsplashed background img 3"/>
+                    </div>*/}
                 </div>
 
 

@@ -11,7 +11,10 @@ class CustomHeader extends React.Component {
                 <div className="nav-top">
                     <div className="container">
                         <div className="row">
-                            <div className="col s12 m8">0613452354 mail@example.com</div>
+                            <div className="col s12 m8">
+                                <i className="tiny material-icons">phone</i> 0613452354 &nbsp;
+                                <i className="tiny material-icons">email</i> mail@example.com
+                            </div>
                             <div className="col s12 m4 right-align">facebook  |  insta  |  twitter  |  youtube</div>
                         </div>
                     </div>
