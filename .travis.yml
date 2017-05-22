@@ -9,5 +9,6 @@ deploy:
   target_branch: master
   local_dir: maintenance
   #local_dir: public
+  fqdn: www.conversaschool.nl
   on:
     branch: src-gatsby
