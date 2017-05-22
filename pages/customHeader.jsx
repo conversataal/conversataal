@@ -2,6 +2,7 @@ import React, { PropTypes } from 'react';
 import { Link } from 'react-router';
 import { prefixLink } from 'gatsby-helpers';
 import '../css/header.scss';
+import logoImg from '../img/logo.png';
 
 class CustomHeader extends React.Component {
     render() {
@@ -9,7 +10,10 @@ class CustomHeader extends React.Component {
             <nav className="white" role="navigation">
                 <div className="nav-top">
                     <div className="container">
-                        0613452354 mail@example.com            fb  ig  tw  youtube
+                        <div className="row">
+                            <div className="col s12 m8">0613452354 mail@example.com</div>
+                            <div className="col s12 m4 right-align">facebook  |  insta  |  twitter  |  youtube</div>
+                        </div>
                     </div>
                 </div>
                 <div className="nav-wrapper container">
@@ -17,7 +21,7 @@ class CustomHeader extends React.Component {
                         to={prefixLink('/')}
                         className="brand-logo"
                     >
-                        Conversa Logo
+                        <img src={prefixLink(logoImg)} alt="Conversa School Logo"/>
                     </Link>
                     <ul className="right hide-on-med-and-down">
                         <li><a href="#">Lessen</a></li>

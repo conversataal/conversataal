@@ -1,0 +1,11 @@
+#index-banner {
+  position: relative;
+
+  .background {
+    background-image: url('../img/bg-parallax.jpg');
+    height: 800px;
+    //position: absolute;
+    top: 0;
+    width: 100%;
+  }
+}

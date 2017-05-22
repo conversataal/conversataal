@@ -1,52 +1,22 @@
 import React from 'react';
-import {Container} from 'react-responsive-grid';
+//import {Container} from 'react-responsive-grid';
+//import Headroom from 'react-headroom';
+//import '../css/header.scss';
 import {Link} from 'react-router';
 import {prefixLink} from 'gatsby-helpers';
-//import Headroom from 'react-headroom';
 import 'material-design-icons/iconfont/material-icons';
 import '../css/markdown-styles';
 import 'materialize-css/dist/css/materialize.min';
 import '../css/materialize-parallax'; // TODO rename
-// import '../css/header.scss';
 import CustomHeader from '../pages/customHeader.jsx';
 
 import {rhythm} from '../utils/typography';
 
-module.exports = React.createClass({
-    propTypes () {
-        return {
-            children: React.PropTypes.any,
-        }
-    },
+class CustomTemplate extends React.Component {
     render () {
         return (
             <div>
                 <CustomHeader/>
-                {/*<Headroom>*/}
-                {/*<nav className="white" role="navigation">
-                 <div className="nav-top">
-                 <div className="container">
-                 0613452354 mail@example.com            fb  ig  tw  youtube
-                 </div>
-                 </div>
-                 <div className="nav-wrapper container">
-                 <Link
-                 to={prefixLink('/')}
-                 className="brand-logo"
-                 >
-                 Conversa Logo
-                 </Link>
-                 <ul className="right hide-on-med-and-down">
-                 <li><a href="#">Navbar Link</a></li>
-                 </ul>
-
-                 <ul id="nav-mobile" className="side-nav">
-                 <li><a href="#">Navbar Link</a></li>
-                 </ul>
-                 <a href="#" data-activates="nav-mobile" className="button-collapse"><i className="material-icons">menu</i></a>
-                 </div>
-                 </nav>*/}
-                {/*</Headroom>*/}
 
                 {this.props.children}
 
@@ -111,5 +81,7 @@ module.exports = React.createClass({
                 </footer>
             </div>
         )
-    },
-})
+    }
+}
+
+module.exports = CustomTemplate;
