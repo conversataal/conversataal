@@ -11,9 +11,9 @@
   "license": "MIT",
   "main": "n/a",
   "scripts": {
-    "build": "python3 crawl.py && http-server public/",
+    "build": "",
     "deploy": "",
-    "develop": "gatsby develop",
+    "develop": "elm-reactor",
     "test": "echo \"Error: no test specified\" && exit 1"
   }
 }

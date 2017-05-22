@@ -17,7 +17,7 @@ Installation:
 
 * nvm use 7.10.0
 * npm i
-* elm-package install (requires npm i -g elm@0.16.0)
+* elm-package install (requires npm i -g elm@0.18.0)
 
 in src branch
 
