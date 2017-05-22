@@ -15,10 +15,11 @@ http://materializecss.com/templates/parallax-template/preview.html
 
 in src branch
 
+* nvm use 6.9.4
 * in \conversa
 * `yarn`
 * `gatsby develop`
-* open http://localhost:8000
+* open http://0.0.0.0:8000/ (not localhost:8000 because of CORS)
 
 build
 

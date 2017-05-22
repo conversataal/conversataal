@@ -5,7 +5,6 @@
   "author": "M.D. van Es",
   "dependencies": {
     "front-matter": "^2.1.2",
-    "gatsby": "^0.12.36",
     "highlight.js": "^9.8.0",
     "history": "^2.0.2",
     "jquery": "^3.2.1",
@@ -19,16 +18,12 @@
     "material-design-icons": "^3.0.1",
     "materialize-css": "^0.98.1",
     "object-assign": "^4.1.1",
-    "react-headroom": "^2.1.2",
     "react-helmet": "^3.2.2",
     "react-responsive-grid": "^0.3.3",
     "react-typography": "^0.15.0",
     "toml-js": "0.0.8",
     "typography": "^0.15.8",
     "typography-plugin-code": "^0.15.0"
-  },
-  "devDependencies": {
-    "gh-pages": "^0.12.0"
   },
   "keywords": [
     "gatsby"
@@ -37,8 +32,11 @@
   "main": "n/a",
   "scripts": {
     "build": "gatsby build",
-    "deploy": "gatsby build --prefix-links && gh-pages -d public",
+    "deploy": "gatsby build --prefix-links",
     "develop": "gatsby develop",
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "gatsby": "^0.12.46"
   }
 }

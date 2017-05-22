@@ -4,10 +4,10 @@ import { prefixLink } from 'gatsby-helpers';
 import Helmet from 'react-helmet';
 import { config } from 'config';
 import bgParallaxImg from '../img/bg-parallax.jpg';
-import $ from 'jquery';
+//import $ from 'jquery';
 //import 'materialize-css/dist/js/materialize.min'; // gatsby build fails with this line
 
-//$.fn.parallax = function () {
+// $.fn.parallax = function () {
 //    var window_width = $(window).width();
 //    // Parallax Scripts
 //    return this.each(function(i) {
@@ -60,32 +60,33 @@ import $ from 'jquery';
 //      });
 //
 //    });
-//};
+// };
 
 export default class Index extends React.Component {
 
   constructor(props) {
     super(props);
-    this.renderParallax = this.renderParallax.bind(this);
+    //this.renderParallax = this.renderParallax.bind(this);
   }
 
   componentDidMount() {
-    this.renderParallax();
+    //this.renderParallax();
   }
 
   componentDidUpdate() {
-    this.renderParallax();
+    //this.renderParallax();
   }
 
   // See http://tech.oyster.com/using-react-and-jquery-together/
-  renderParallax() {
-    console.log('renderParallax', $('footer'));
-    //$('.parallax').parallax();
-  }
+  // renderParallax() {
+  //   console.log('renderParallax', $('footer'));
+  //   //$('.parallax').parallax();
+  // }
 
   render () {
     return (
-      <div><div id="index-banner" className="parallax-container" style={{width: '100%'}}>
+      <div><div id="index-banner" style={{width: '100%'}}>
+          <img src={prefixLink(bgParallaxImg)} alt="Unsplashed background img 1"/>
           <div className="section no-pad-bot">
             <div className="container">
               <br/><br/>
@@ -100,7 +101,6 @@ export default class Index extends React.Component {
 
             </div>
           </div>
-          <div className="parallax"><img src={prefixLink(bgParallaxImg)} alt="Unsplashed background img 1"/></div>
         </div>
 
         <div className="container">
