@@ -27,12 +27,18 @@ class CustomHeader extends React.Component {
                         <img src={prefixLink(logoImg)} alt="Conversa School Logo"/>
                     </Link>
                     <ul className="right hide-on-med-and-down">
-                        <li><a href="#">Lessen</a></li>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#courses">Cursussen</a></li>
+                        <li><a href="#nuggets">Poolse Taalweetjes</a></li>
+                        <li><a href="#mission">Onze Missie</a></li>
                         <li><a href="#">Contact</a></li>
                     </ul>
 
                     <ul id="nav-mobile" className="side-nav">
-                        <li><a href="#">Lessen</a></li>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Cursussen</a></li>
+                        <li><a href="#">Poolse Taalweetjes</a></li>
+                        <li><a href="#">Onze Missie</a></li>
                         <li><a href="#">Contact</a></li>
                     </ul>
                     <a href="#" data-activates="nav-mobile" className="button-collapse"><i className="material-icons">menu</i></a>

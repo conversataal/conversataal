@@ -113,10 +113,10 @@ export default class Index extends React.Component {
                                 </div>
                             </div>*/}
                             <div className="row">
-                                <div className="col s12 m4 indigo white-text">
+                                <div className="col s12 m4 indigo white-text" id="mission">
                                     <div className="icon-block">
                                         <h2 className="center"><i className="material-icons">business</i></h2>
-                                        <h5 className="center">In your company</h5>
+                                        <h5 className="center">Onze Missie</h5>
 
                                         <p className="light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
                                             scelerisque id nunc nec volutpat. Etiam pellentesque tristique arcu, non
@@ -124,10 +124,10 @@ export default class Index extends React.Component {
                                     </div>
                                 </div>
 
-                                <div className="col s12 m4 red darken-2 white-text">
+                                <div className="col s12 m4 red darken-2 white-text" id="courses">
                                     <div className="icon-block">
                                         <h2 className="center"><i className="material-icons">group</i></h2>
-                                        <h5 className="center">At your chosen location</h5>
+                                        <h5 className="center">Cursussen</h5>
 
                                         <p className="light">Cras ut ultricies eros. Maecenas eros justo, ullamcorper a
                                             sapien id, viverra ultrices eros. Morbi sem neque, posuere et pretium eget,
@@ -136,10 +136,10 @@ export default class Index extends React.Component {
                                     </div>
                                 </div>
 
-                                <div className="col s12 m4 indigo white-text">
+                                <div className="col s12 m4 indigo white-text" id="nuggets">
                                     <div className="icon-block">
                                         <h2 className="center"><i className="material-icons">videocam</i></h2>
-                                        <h5 className="center">On Skype</h5>
+                                        <h5 className="center">Poolse Taalweetjes</h5>
 
                                         <p className="light">Morbi massa odio, condimentum sed ipsum ac, gravida ultrices
                                             erat. Nullam eget dignissim mauris, non tristique erat. Vestibulum ante ipsum
