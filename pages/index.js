@@ -7,6 +7,7 @@ import Helmet from 'react-helmet';
 import {config} from 'config';
 //import sliderBgImg from '../img/bg-parallax.jpg';
 import './index-banner.scss';
+import libraryImg from '../img/library.svg';
 
 // $.fn.parallax = function () {
 //    var window_width = $(window).width();
@@ -119,7 +120,9 @@ export default class Index extends React.Component {
                                 {/*<div className="col s12 m4 indigo white-text" id="mission">*/}
                                 <div className="col s12 m4 white-text" id="mission" style={{backgroundColor: '#7AA622'}}>
                                     <div className="icon-block">
-                                        <h2 className="center"><i className="material-icons">business</i></h2>
+                                        <h2 className="center">
+                                            <img style={{height: '2em'}} src={prefixLink(libraryImg)} alt="Library Icon"/>
+                                        </h2>
                                         <h5 className="center">Onze Missie</h5>
 
                                         <p className="light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
@@ -131,7 +134,10 @@ export default class Index extends React.Component {
                                 {/*<div className="col s12 m4 red darken-2 white-text" id="courses">*/}
                                 <div className="col s12 m4 white-text" id="courses" style={{backgroundColor: '#B22425'}}>
                                     <div className="icon-block">
-                                        <h2 className="center"><i className="material-icons">group</i></h2>
+                                        <h2 className="center">
+                                            {/*<i className="material-icons">group</i>*/}
+                                            <img style={{height: '2em'}} src={prefixLink(libraryImg)} alt="Library Icon"/>
+                                        </h2>
                                         <h5 className="center">Cursussen</h5>
 
                                         <p className="light">Cras ut ultricies eros. Maecenas eros justo, ullamcorper a
@@ -143,7 +149,9 @@ export default class Index extends React.Component {
 
                                 <div className="col s12 m4 white-text" id="nuggets" style={{backgroundColor: '#166B6B'}}>
                                     <div className="icon-block">
-                                        <h2 className="center"><i className="material-icons">videocam</i></h2>
+                                        <h2 className="center">
+                                            <img style={{height: '2em'}} src={prefixLink(libraryImg)} alt="Library Icon"/>
+                                        </h2>
                                         <h5 className="center">Poolse Taalweetjes</h5>
 
                                         <p className="light">Morbi massa odio, condimentum sed ipsum ac, gravida ultrices
