@@ -8,7 +8,7 @@ class CustomHeader extends React.Component {
     render() {
         return (
             <nav className="white" role="navigation">
-                <div className="nav-top">
+                <div className="nav-top indigo darken-4">
                     <div className="container">
                         <div className="row">
                             <div className="col s12 m8">

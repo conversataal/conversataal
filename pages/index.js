@@ -87,6 +87,14 @@ export default class Index extends React.Component {
     render() {
         return (
             <div>
+                <Helmet
+                    title={config.siteTitle}
+                    meta={[
+                        {"name": "description", "content": "Conversa School - Modern en interactief Pools"},
+                        {"name": "keywords", "content": "polish, language, pools, taal, modern, interactief, conversatieles"},
+                    ]}
+                />
+
                 <div id="index-banner" style={{width: '100%'}}>
                     <div className="background"></div>
                     <div className="section no-pad-bot" style={{marginTop: '-600px'}}>
@@ -149,7 +157,7 @@ export default class Index extends React.Component {
                     </div>
 
 
-                    <div className="section no-pad-bot">
+                    {/*<div className="section no-pad-bot">
                         <div className="container">
                             <br/><br/>
                             <h1 className="header center teal-text text-lighten-2">Conversa</h1>
@@ -163,12 +171,9 @@ export default class Index extends React.Component {
                             <br/><br/>
 
                         </div>
-                    </div>
+                    </div>*/}
                 </div>
-
-
-
-                <div className="parallax-container valign-wrapper">
+                {/*<div className="parallax-container valign-wrapper">
                     <div className="section no-pad-bot">
                         <div className="container">
                             <div className="row center">
@@ -176,11 +181,11 @@ export default class Index extends React.Component {
                             </div>
                         </div>
                     </div>
-                    {/*<div className="parallax"><img src={prefixLink(sliderBgImg)} alt="Unsplashed background img 2"/>
-                    </div>*/}
-                </div>
+                    <div className="parallax"><img src={prefixLink(sliderBgImg)} alt="Unsplashed background img 2"/>
+                    </div>
+                </div>*/}
 
-                <div className="container">
+                {/*<div className="container">
                     <div className="section">
 
                         <div className="row">
@@ -200,10 +205,9 @@ export default class Index extends React.Component {
                         </div>
 
                     </div>
-                </div>
+                </div>*/}
 
-
-                <div className="parallax-container valign-wrapper">
+                {/*<div className="parallax-container valign-wrapper">
                     <div className="section no-pad-bot">
                         <div className="container">
                             <div className="row center">
@@ -211,18 +215,9 @@ export default class Index extends React.Component {
                             </div>
                         </div>
                     </div>
-                    {/*<div className="parallax"><img src={prefixLink(sliderBgImg)} alt="Unsplashed background img 3"/>
-                    </div>*/}
-                </div>
-
-
-                <Helmet
-                    title={config.siteTitle}
-                    meta={[
-                        {"name": "description", "content": "Sample"},
-                        {"name": "keywords", "content": "sample, something"},
-                    ]}
-                />
+                    <div className="parallax"><img src={prefixLink(sliderBgImg)} alt="Unsplashed background img 3"/>
+                    </div>
+                </div>*/}
             </div>
         )
     }
