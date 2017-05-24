@@ -115,7 +115,7 @@ export default class Index extends React.Component {
 
                     <div className="container index-banner-info">
                         <div className="section">
-                            <div className="row">
+                            <div className="row" style={{display: 'flex'}}>
                                 {/*<div className="col s12 m4 indigo white-text" id="mission">*/}
                                 <div className="col s12 m4 white-text" id="mission" style={{backgroundColor: '#7AA622'}}>
                                     <div className="icon-block">

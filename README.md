@@ -6,18 +6,14 @@ http://materializecss.com/templates/parallax-template/preview.html
 
 ## TODO
 
-* menu bar bottom margin
 * first deploy
 * Remove jquery dependency for parallax scroll and for menu
-* links bigger
 * only icons for social media
-* Button in Red -> Get started to ...? Turn off for the moment
-* picture
 * straighten box height
+* Test cross browser and mobile
 * Links with # do not work. Look for solution for react-router v2 on 
 https://github.com/ReactTraining/react-router/issues/394 This causes a problem for links to local anchors in the header
  and footer.
-
 
 # Dev
 
