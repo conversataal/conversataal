@@ -14,7 +14,9 @@ http://materializecss.com/templates/parallax-template/preview.html
 * Button in Red -> Get started to ...? Turn off for the moment
 * picture
 * straighten box height
-* footer
+* Links with # do not work. Look for solution for react-router v2 on 
+https://github.com/ReactTraining/react-router/issues/394 This causes a problem for links to local anchors in the header
+ and footer.
 
 
 # Dev
