@@ -11,8 +11,6 @@ http://materializecss.com/templates/parallax-template/preview.html
 * Remove jquery dependency for parallax scroll and for menu
 * links bigger
 * only icons for social media
-* Conversa _school_
-* Modern en interactief Pools
 * Button in Red -> Get started to ...? Turn off for the moment
 * picture
 * straighten box height

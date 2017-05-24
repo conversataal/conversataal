@@ -92,28 +92,24 @@ export default class Index extends React.Component {
                     <div className="section no-pad-bot" style={{marginTop: '-600px'}}>
                         <div className="container">
                             <br/><br/>
-                            <h1 className="header white-text">Conversa</h1>
+                            <h1 className="header white-text">Conversa School</h1>
                             <div className="row">
-                                <h5 className="header col s12 light white-text">Tailor-made individual and group courses</h5>
+                                <h5 className="header col s12 light white-text">Modern en interactief Pools</h5>
                             </div>
-                            <div className="row">
-                                <a href="http://materializecss.com/getting-started.html" id="download-button"
-                                   className="btn-large waves-effect waves-light indigo lighten-1">Get Started</a>
-                            </div>
-                            <br/><br/>
+                            {/*<div className="row">
+                                <a href="#courses" id="download-button"
+                                   className="btn-large waves-effect waves-light indigo darken-4">Cursussen</a>
+                            </div>*/}
+                            <br/><br/><br/><br/><br/>
 
                         </div>
                     </div>
 
                     <div className="container index-banner-info">
                         <div className="section">
-                            {/*<div className="row">
-                                <div className="col s12">
-                                    Some information about this picture
-                                </div>
-                            </div>*/}
                             <div className="row">
-                                <div className="col s12 m4 indigo white-text" id="mission">
+                                {/*<div className="col s12 m4 indigo white-text" id="mission">*/}
+                                <div className="col s12 m4 white-text" id="mission" style={{backgroundColor: '#7AA622'}}>
                                     <div className="icon-block">
                                         <h2 className="center"><i className="material-icons">business</i></h2>
                                         <h5 className="center">Onze Missie</h5>
@@ -124,7 +120,8 @@ export default class Index extends React.Component {
                                     </div>
                                 </div>
 
-                                <div className="col s12 m4 red darken-2 white-text" id="courses">
+                                {/*<div className="col s12 m4 red darken-2 white-text" id="courses">*/}
+                                <div className="col s12 m4 white-text" id="courses" style={{backgroundColor: '#B22425'}}>
                                     <div className="icon-block">
                                         <h2 className="center"><i className="material-icons">group</i></h2>
                                         <h5 className="center">Cursussen</h5>
@@ -136,7 +133,7 @@ export default class Index extends React.Component {
                                     </div>
                                 </div>
 
-                                <div className="col s12 m4 indigo white-text" id="nuggets">
+                                <div className="col s12 m4 white-text" id="nuggets" style={{backgroundColor: '#166B6B'}}>
                                     <div className="icon-block">
                                         <h2 className="center"><i className="material-icons">videocam</i></h2>
                                         <h5 className="center">Poolse Taalweetjes</h5>
