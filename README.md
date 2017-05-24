@@ -9,6 +9,14 @@ http://materializecss.com/templates/parallax-template/preview.html
 * menu bar bottom margin
 * first deploy
 * Remove jquery dependency for parallax scroll and for menu
+* links bigger
+* only icons for social media
+* Conversa _school_
+* Modern en interactief Pools
+* Button in Red -> Get started to ...? Turn off for the moment
+* picture
+* straighten box height
+* footer
 
 
 # Dev
@@ -24,7 +32,7 @@ in src branch
 build
 
 * manual: `gatsby build` && `gatsby serve-build`, result in /public
-* CI: .travis.yml calls `tsby build`
+* CI: .travis.yml calls `gatsby build`
 
 # Ops
 

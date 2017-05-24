@@ -1,13 +1,12 @@
 import React from 'react';
 //import {Container} from 'react-responsive-grid';
 //import Headroom from 'react-headroom';
-//import '../css/header.scss';
 import {Link} from 'react-router';
 import {prefixLink} from 'gatsby-helpers';
 import 'material-design-icons/iconfont/material-icons';
 import '../css/markdown-styles';
 import 'materialize-css/dist/css/materialize.min';
-import '../css/materialize-parallax'; // TODO rename
+import '../css/main';
 import CustomHeader from '../pages/customHeader.jsx';
 
 import {rhythm} from '../utils/typography';

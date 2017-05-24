@@ -1,7 +1,7 @@
 import React, { PropTypes } from 'react';
 import { Link } from 'react-router';
 import { prefixLink } from 'gatsby-helpers';
-import '../css/header.scss';
+import './customHeader.scss';
 import logoImg from '../img/logo.png';
 
 class CustomHeader extends React.Component {
