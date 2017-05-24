@@ -121,7 +121,7 @@ export default class Index extends React.Component {
                                 <div className="col s12 m4 white-text" id="mission" style={{backgroundColor: '#7AA622'}}>
                                     <div className="icon-block">
                                         <h2 className="center">
-                                            <img style={{height: '2em'}} src={prefixLink(libraryImg)} alt="Library Icon"/>
+                                            <img style={{height: '1.5em'}} src={prefixLink(libraryImg)} alt="Library Icon"/>
                                         </h2>
                                         <h5 className="center">Onze Missie</h5>
 
@@ -136,7 +136,7 @@ export default class Index extends React.Component {
                                     <div className="icon-block">
                                         <h2 className="center">
                                             {/*<i className="material-icons">group</i>*/}
-                                            <img style={{height: '2em'}} src={prefixLink(libraryImg)} alt="Library Icon"/>
+                                            <img style={{height: '1.5em'}} src={prefixLink(libraryImg)} alt="Library Icon"/>
                                         </h2>
                                         <h5 className="center">Cursussen</h5>
 
@@ -150,7 +150,7 @@ export default class Index extends React.Component {
                                 <div className="col s12 m4 white-text" id="nuggets" style={{backgroundColor: '#166B6B'}}>
                                     <div className="icon-block">
                                         <h2 className="center">
-                                            <img style={{height: '2em'}} src={prefixLink(libraryImg)} alt="Library Icon"/>
+                                            <img style={{height: '1.5em'}} src={prefixLink(libraryImg)} alt="Library Icon"/>
                                         </h2>
                                         <h5 className="center">Poolse Taalweetjes</h5>
 
