@@ -3,6 +3,8 @@ import { Link } from 'react-router';
 import { prefixLink } from 'gatsby-helpers';
 import './customHeader.scss';
 import logoImg from '../img/logo.png';
+import fbImg from '../img/facebook.svg';
+import liImg from '../img/linkedin.svg';
 
 class CustomHeader extends React.Component {
     render() {
@@ -15,7 +17,14 @@ class CustomHeader extends React.Component {
                                 {/*<i className="tiny material-icons">phone</i> 06XXXXXXXX &nbsp;*/}
                                 <i className="tiny material-icons">email</i> <a href="mailto:info@conversaschool.nl">info@conversaschool.nl</a>
                             </div>
-                            <div className="col s12 m4 right-align">facebook  |  insta  |  twitter  |  youtube</div>
+                            <div className="col s12 m4 right-align">
+                                <a className="social-media" href="https://www.facebook.com/ConversaSchool/">
+                                    <img src={prefixLink(fbImg)} alt="Conversa School Facebook"/>
+                                </a>
+                                <a className="social-media" href="https://www.linkedin.com/company-beta/18039347/">
+                                    <img src={prefixLink(liImg)} alt="Conversa School LinkedIn"/>
+                                </a>
+                                |  insta  |  twitter  |  youtube</div>
                         </div>
                     </div>
                 </div>
