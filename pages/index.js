@@ -33,7 +33,10 @@ export default class Index extends React.Component {
 
                 <div id="index-banner" style={{width: '100%'}}>
                     <div className="background"></div>
-                    <div className="section no-pad-bot" style={{marginTop: '-600px'}}>
+                    <div className="section no-pad-bot" style={{
+                        marginTop: '-600px',
+                        textShadow: '1px 1px 2px rgba(0, 0, 0, 0.8)'
+                    }}>
                         <div className="container">
                             <br/><br/>
                             <h1 className="header white-text">Conversa School</h1>
