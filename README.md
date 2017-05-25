@@ -11,7 +11,8 @@ http://materializecss.com/templates/parallax-template/preview.html
 * Links with # do not work. Look for solution for react-router v2 on 
 https://github.com/ReactTraining/react-router/issues/394 This causes a problem for links to local anchors in the header
  and footer.
-
+* Update syntax in all JS(X) files e.g. utils/typography
+* Add linting
 
 # Dev
 
