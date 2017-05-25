@@ -8,6 +8,7 @@ import './index-banner.scss';
 import capImg from '../img/cap.svg';
 import libraryImg from '../img/library.svg';
 import lightbulbImg from '../img/lightbulb.svg';
+import rocketImg from '../img/rocket.svg';
 
 export default class Index extends React.Component {
 
@@ -55,7 +56,7 @@ export default class Index extends React.Component {
                                 <div className="col s12 m4 white-text" id="mission" style={{backgroundColor: '#7AA622'}}>
                                     <div className="icon-block">
                                         <h2 className="center">
-                                            <img style={{height: '1.5em'}} src={prefixLink(capImg)} alt="Library Icon"/>
+                                            <img style={{height: '1.5em'}} src={prefixLink(rocketImg)} alt="Library Icon"/>
                                         </h2>
                                         <h5 className="center">Onze Missie</h5>
 
@@ -70,7 +71,7 @@ export default class Index extends React.Component {
                                     <div className="icon-block">
                                         <h2 className="center">
                                             {/*<i className="material-icons">group</i>*/}
-                                            <img style={{height: '1.5em'}} src={prefixLink(libraryImg)} alt="Library Icon"/>
+                                            <img style={{height: '1.5em'}} src={prefixLink(capImg)} alt="Library Icon"/>
                                         </h2>
                                         <h5 className="center">Cursussen</h5>
 
