@@ -12,10 +12,24 @@ import capImg from '../img/cap.svg';
 import lightbulbImg from '../img/lightbulb.svg';
 import rocketImg from '../img/rocket.svg';
 
+import img1 from '../img/krakow.jpg';
+import img2 from '../img/krakow_kazimierzdistrict_facade.jpg';
+import img3 from '../img/krakow_wawel_birdview.jpg';
+import img4 from '../img/lublin_castle.jpg';
+import img5 from '../img/poznan_oldtown_market.jpg';
+const imgbgs = [img1, img2, img3, img4, img5];
+
 export default class Index extends React.Component {
 
     constructor(props) {
         super(props);
+        this.state = {
+            bgImg: imgbgs[0],
+            showDebug: false
+        };
+        this.dbgChangeBg = this.dbgChangeBg.bind(this);
+        this.getDbgMenu = this.getDbgMenu.bind(this);
+        this.setBg = this.setBg.bind(this);
     }
 
     componentDidMount() {
@@ -26,7 +40,36 @@ export default class Index extends React.Component {
 
     // componentDidUpdate() {}
 
+    /* start debug functions */
+    dbgChangeBg() {
+        this.setState({showDebug: !this.state.showDebug});
+    }
+
+    setBg(uri) {
+        this.setState({bgImg: uri});
+    }
+
+    getDbgMenu() {
+        if(this.state.showDebug) {
+            const entries = imgbgs.map((item, index) => {
+                console.log(item, index);
+                return <div onClick={() => this.setBg(item)}>background {index}</div>
+            });
+            return (
+                <div style={{
+                    backgroundColor: 'black',
+                    color: 'green',
+                    fontFamily: 'monospace'
+                }}>
+                    {entries}
+                </div>
+            );
+        }
+    }
+    /* end debug functions */
+
     render() {
+        const debug = this.getDbgMenu();
         return (
             <div>
                 <Helmet
@@ -38,7 +81,10 @@ export default class Index extends React.Component {
                 />
 
                 <div id="index-banner" style={{width: '100%'}}>
-                    <div className="background"></div>
+                    {debug}
+                    <div className="background" onClick={this.dbgChangeBg} style={{
+                        backgroundImage: 'url(' + this.state.bgImg + ')'
+                    }}> </div>
                     <div className="section no-pad-bot" style={{
                         marginTop: '-600px',
                         textShadow: '1px 1px 2px rgba(0, 0, 0, 0.8)'
