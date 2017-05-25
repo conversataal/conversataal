@@ -4,9 +4,11 @@ import React from 'react';
 import {prefixLink} from 'gatsby-helpers';
 import Helmet from 'react-helmet';
 import {config} from 'config';
+import ReactGA from 'react-ga';
+
 import './index-banner.scss';
+
 import capImg from '../img/cap.svg';
-import libraryImg from '../img/library.svg';
 import lightbulbImg from '../img/lightbulb.svg';
 import rocketImg from '../img/rocket.svg';
 
@@ -16,8 +18,12 @@ export default class Index extends React.Component {
         super(props);
     }
 
-    // componentDidMount() {}
-    //
+    componentDidMount() {
+        ReactGA.initialize('UA-99911967-1');
+        ReactGA.set({ page: window.location.pathname + window.location.search });
+        ReactGA.pageview(window.location.pathname + window.location.search);
+    }
+
     // componentDidUpdate() {}
 
     render() {
