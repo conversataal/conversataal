@@ -3,13 +3,14 @@ import React from 'react';
 //import Headroom from 'react-headroom';
 import {prefixLink} from 'gatsby-helpers';
 import 'material-design-icons/iconfont/material-icons';
+import '../css/font.scss';
 import '../css/markdown-styles';
 import 'materialize-css/dist/css/materialize.min';
 import '../css/main';
 import CustomHeader from './customHeader';
 import CustomFooter from './customFooter';
 
-import {rhythm} from '../utils/typography';
+//import {rhythm} from '../utils/typography';
 
 class CustomTemplate extends React.Component {
     render () {

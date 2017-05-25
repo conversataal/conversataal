@@ -20,10 +20,7 @@
     "object-assign": "^4.1.1",
     "react-ga": "^2.2.0",
     "react-helmet": "^3.2.2",
-    "react-typography": "^0.15.0",
-    "toml-js": "0.0.8",
-    "typography": "^0.15.8",
-    "typography-plugin-code": "^0.15.0"
+    "toml-js": "0.0.8"
   },
   "keywords": [
     "gatsby"
