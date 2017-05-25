@@ -17,8 +17,7 @@ class HtmlWrapper extends React.Component {
 }
 
 HtmlWrapper.propTypes = {
-    router: React.PropTypes.object,
+    router: React.PropTypes.object
 };
 
 export default HtmlWrapper;
-
