@@ -43,8 +43,8 @@ class CustomHeader extends React.Component {
                     <ul className="right hide-on-med-and-down">
                         <li><Link to={prefixLink('/#top')}>Home</Link></li>
                         <li><a href="#courses">Cursussen</a></li>
-                        <li><a href="#nuggets">Poolse Taalweetjes</a></li>
-                        <li><a href="#mission">Onze Missie</a></li>
+                        <li><a href="#nuggets">Taalweetjes</a></li>
+                        <li><a href="#mission">Missie</a></li>
                         <li><a href="#">Contact</a></li>
                     </ul>
 
