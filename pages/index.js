@@ -19,12 +19,37 @@ import img4 from '../img/lublin_castle.jpg';
 import img5 from '../img/poznan_oldtown_market.jpg';
 const imgbgs = [img1, img2, img3, img4, img5];
 
+// Set 0
+// const block1Color = '#7AA622';
+// const block2Color = '#B22425';
+// const block3Color = '#166B6B';
+
+// Set 1
+// const block1Color = '#303170';
+// const block2Color = '#B22425';
+// const block3Color = '#91912D';
+
+// Set 2
+const block1Color = '#303170';
+const block2Color = '#712B4B';
+const block3Color = '#B22425';
+
+// // Set 3
+// const block1Color = '#303170';
+// const block2Color = '#912D91';
+// const block3Color = '#B22425';
+//
+// // Set 4
+// const block1Color = '#303170';
+// const block2Color = '#B22425';
+// const block3Color = '#DFCDC4';
+
 export default class Index extends React.Component {
 
     constructor(props) {
         super(props);
         this.state = {
-            bgImg: imgbgs[0],
+            bgImg: imgbgs[1],
             showDebug: false
         };
         this.dbgChangeBg = this.dbgChangeBg.bind(this);
@@ -108,7 +133,7 @@ export default class Index extends React.Component {
                         <div className="section">
                             <div className="row" style={{display: 'flex'}}>
                                 {/*<div className="col s12 m4 indigo white-text" id="mission">*/}
-                                <div className="col s12 m4 white-text" id="mission" style={{backgroundColor: '#7AA622'}}>
+                                <div className="col s12 m4 white-text" id="mission" style={{backgroundColor: block1Color}}>
                                     <div className="icon-block">
                                         <h2 className="center">
                                             <img style={{height: '1.5em'}} src={prefixLink(rocketImg)} alt="Library Icon"/>
@@ -122,7 +147,7 @@ export default class Index extends React.Component {
                                 </div>
 
                                 {/*<div className="col s12 m4 red darken-2 white-text" id="courses">*/}
-                                <div className="col s12 m4 white-text" id="courses" style={{backgroundColor: '#B22425'}}>
+                                <div className="col s12 m4 white-text" id="courses" style={{backgroundColor: block2Color}}>
                                     <div className="icon-block">
                                         <h2 className="center">
                                             {/*<i className="material-icons">group</i>*/}
@@ -137,7 +162,7 @@ export default class Index extends React.Component {
                                     </div>
                                 </div>
 
-                                <div className="col s12 m4 white-text" id="nuggets" style={{backgroundColor: '#166B6B'}}>
+                                <div className="col s12 m4 white-text" id="nuggets" style={{backgroundColor: block3Color}}>
                                     <div className="icon-block">
                                         <h2 className="center">
                                             <img style={{height: '1.5em'}} src={prefixLink(lightbulbImg)} alt="Library Icon"/>
