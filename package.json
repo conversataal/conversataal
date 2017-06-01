@@ -1,7 +1,7 @@
 {
   "name": "conversa",
   "description": "conversa site",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "author": "M.D. van Es",
   "dependencies": {
     "front-matter": "^2.1.2",
