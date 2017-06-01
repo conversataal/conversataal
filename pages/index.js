@@ -138,11 +138,14 @@ export default class Index extends React.Component {
                                         <h2 className="center">
                                             <img style={{height: '1.5em'}} src={prefixLink(rocketImg)} alt="Library Icon"/>
                                         </h2>
-                                        <h5 className="center">Onze Missie</h5>
+                                        <h5 className="center">Missie</h5>
 
-                                        <p className="light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
-                                            scelerisque id nunc nec volutpat. Etiam pellentesque tristique arcu, non
-                                            consequat magna fermentum ac. </p>
+                                        <p className="light">Ben je al een tijdje met Pools leren bezig, maar vind je het
+                                            toch moeilijk om een basis gesprek in het Pools te houden?
+                                            Ken je veel verschillende Poolse woorden, maar weet je niet hoe je er
+                                            originele zinnen van moet maken?<br/>
+                                            Conversa School is een offline en online Poolse taalschool en onze missie is
+                                            jouw kennis van de Poolse taal naar een hoger niveau te brengen!</p>
                                     </div>
                                 </div>
 
@@ -155,10 +158,13 @@ export default class Index extends React.Component {
                                         </h2>
                                         <h5 className="center">Cursussen</h5>
 
-                                        <p className="light">Cras ut ultricies eros. Maecenas eros justo, ullamcorper a
-                                            sapien id, viverra ultrices eros. Morbi sem neque, posuere et pretium eget,
-                                            bibendum sollicitudin lacus. Aliquam eleifend sollicitudin diam, eu mattis nisl
-                                            maximus sed. Nulla imperdiet semper molestie. </p>
+                                        <p className="light">We bieden je online handleidingen en gidsen die helpen
+                                            jouw taalniveau van Pools te bepalen, je grammatica en zinsbouw op orde te
+                                            krijgen en je luistervaardigheid te verbeteren.<br/>
+                                            Daarnaast bieden we (offline) conversatiecursussen en Poolse Taal Avonden
+                                            zodat je de Poolse taal in een veilige en gezellige omgeving kan oefenen.
+                                            Kom gauw terug voor meer informatie of neem een kijkje
+                                            op <a href="https://www.facebook.com/ConversaSchool/">onze Facebook pagina</a>.</p>
                                     </div>
                                 </div>
 
@@ -167,11 +173,12 @@ export default class Index extends React.Component {
                                         <h2 className="center">
                                             <img style={{height: '1.5em'}} src={prefixLink(lightbulbImg)} alt="Library Icon"/>
                                         </h2>
-                                        <h5 className="center">Poolse Taalweetjes</h5>
+                                        <h5 className="center">Taalweetjes</h5>
 
-                                        <p className="light">Morbi massa odio, condimentum sed ipsum ac, gravida ultrices
-                                            erat. Nullam eget dignissim mauris, non tristique erat. Vestibulum ante ipsum
-                                            primis in faucibus orci luctus et ultrices posuere cubilia Curae;</p>
+                                        <p className="light">Taal leren moet ook leuk zijn! Hier vind je wat leuke
+                                            taalweetjes, mini-toetsen, fabels en feiten over de Poolse taal.<br/>
+                                            De informatie die je hier vindt helpen je iedereen met jouw Poolse taalkennis
+                                            te imponeren.</p>
                                     </div>
                                 </div>
                             </div>
