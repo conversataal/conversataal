@@ -13,15 +13,21 @@ class CustomHeader extends React.Component {
                 <div className="nav-top indigo darken-4">
                     <div className="container">
                         <div className="row">
-                            {/*<div className="col s12 m8">
-                                <i className="tiny material-icons">phone</i> 06XXXXXXXX &nbsp;
-                                <i className="tiny material-icons">email</i> <a href="mailto:info@conversaschool.nl">info@conversaschool.nl</a>
-                            </div>*/}
-                            <div className="col s12 m12 right-align">
-                                <div className="mail">
+                            <div className="col s12 m6">
+                                <div className="icon-and-contact">
+                                    <i className="small material-icons">phone</i>
+                                    <a href="tel:+31651031900">06 5103 1900</a>
+                                </div>
+                                <div className="icon-and-contact">
                                     <i className="small material-icons">email</i>
                                     <a href="mailto:info@conversaschool.nl">info@conversaschool.nl</a>
                                 </div>
+                            </div>
+                            <div className="col s12 m6 right-align">
+                                {/*<div className="mail">
+                                    <i className="small material-icons">email</i>
+                                    <a href="mailto:info@conversaschool.nl">info@conversaschool.nl</a>
+                                </div>*/}
                                 <a className="social-media" href="https://www.facebook.com/ConversaSchool/">
                                     <img src={prefixLink(fbImg)} alt="Conversa School Facebook"/>
                                 </a>
