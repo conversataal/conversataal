@@ -86,7 +86,8 @@ export default class Index extends React.Component {
 
                 <div id="index-banner" style={{width: '100%'}}>
                     {debug}
-                    <div className="background" onClick={this.dbgChangeBg} style={{
+                    {/*<div className="background" onClick={this.dbgChangeBg} style={{*/}
+                    <div className="background" style={{
                         backgroundImage: 'url(' + this.state.bgImg + ')'
                     }}> </div>
                     <div className="section no-pad-bot" style={{
