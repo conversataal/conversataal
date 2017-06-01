@@ -1,11 +1,18 @@
 #index-banner {
-  position: relative;
+    position: relative;
 
-  .background {
-    //background-image: url('../img/krakow.jpg');
-    background-position-y: -170px;
-    height: 800px;
-    top: 0;
-    width: 100%;
-  }
+    .background {
+        //background-image: url('../img/krakow.jpg');
+        background-position-y: -170px;
+        height: 690px;
+        top: 0;
+        width: 100%;
+    }
+
+    .banner-text {
+        background-color: rgba(35, 29, 30, 0.75);
+        display: inline-block;
+        margin: 11rem -0.75rem 4rem;
+        padding: 0 6rem 2rem 1.5rem;
+    }
 }

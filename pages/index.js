@@ -19,30 +19,9 @@ import img4 from '../img/lublin_castle.jpg';
 import img5 from '../img/poznan_oldtown_market.jpg';
 const imgbgs = [img1, img2, img3, img4, img5];
 
-// Set 0
-// const block1Color = '#7AA622';
-// const block2Color = '#B22425';
-// const block3Color = '#166B6B';
-
-// Set 1
-// const block1Color = '#303170';
-// const block2Color = '#B22425';
-// const block3Color = '#91912D';
-
-// Set 2
 const block1Color = '#303170';
-const block2Color = '#712B4B';
+const block2Color = '#231D1E';
 const block3Color = '#B22425';
-
-// // Set 3
-// const block1Color = '#303170';
-// const block2Color = '#912D91';
-// const block3Color = '#B22425';
-//
-// // Set 4
-// const block1Color = '#303170';
-// const block2Color = '#B22425';
-// const block3Color = '#DFCDC4';
 
 export default class Index extends React.Component {
 
@@ -111,21 +90,19 @@ export default class Index extends React.Component {
                         backgroundImage: 'url(' + this.state.bgImg + ')'
                     }}> </div>
                     <div className="section no-pad-bot" style={{
-                        marginTop: '-600px',
-                        textShadow: '1px 1px 2px rgba(0, 0, 0, 0.8)'
+                        marginTop: '-600px'
                     }}>
                         <div className="container">
-                            <br/><br/>
-                            <h1 className="header white-text">Conversa School</h1>
-                            <div className="row">
-                                <h5 className="header col s12 light white-text">Modern en interactief Pools</h5>
+                            <div className="banner-text">
+                                <h1 className="header white-text">Conversa School</h1>
+                                <div className="row">
+                                    <h5 className="header col s12 light white-text">Modern en interactief Pools</h5>
+                                </div>
+                                {/*<div className="row">
+                                 <a href="#courses" id="download-button"
+                                 className="btn-large waves-effect waves-light indigo darken-4">Cursussen</a>
+                                 </div>*/}
                             </div>
-                            {/*<div className="row">
-                                <a href="#courses" id="download-button"
-                                   className="btn-large waves-effect waves-light indigo darken-4">Cursussen</a>
-                            </div>*/}
-                            <br/><br/><br/><br/><br/>
-
                         </div>
                     </div>
 
