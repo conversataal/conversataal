@@ -20,11 +20,11 @@ class CustomFooter extends React.Component {
                                 </li>
                                 <li><a className="white-text" href="#courses">Cursussen</a>
                                 </li>
-                                <li><a className="white-text" href="#nuggets">Poolse Taalweetjes</a>
+                                <li><a className="white-text" href="#nuggets">Taalweetjes</a>
                                 </li>
-                                <li><a className="white-text" href="#mission">Onze Missie</a>
+                                <li><a className="white-text" href="#mission">Missie</a>
                                 </li>
-                                <li><a className="white-text" href="#contact">Contact</a>
+                                <li><a className="white-text" href="#top">Contact</a>
                                 </li>
                             </ul>
                         </div>
@@ -41,7 +41,7 @@ class CustomFooter extends React.Component {
                 </div>
                 <div className="footer-copyright indigo darken-4">
                     <div className="container">
-                        <a className="indigo-text text-darken-2" href="http://mdworld.nl">mdworld.nl</a>
+                        © 2017 Conversa School {/*<a className="indigo-text text-darken-2" href="http://mdworld.nl">mdworld.nl</a>*/}
                     </div>
                 </div>
             </footer>
