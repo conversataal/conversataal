@@ -109,9 +109,9 @@ export default class Index extends React.Component {
 
                     <div className="container index-banner-info">
                         <div className="section">
-                            <div className="row" style={{display: 'flex'}}>
+                            <div className="row flex-boxes">
                                 {/*<div className="col s12 m4 indigo white-text" id="mission">*/}
-                                <div className="col s12 m4 white-text" id="mission" style={{backgroundColor: block1Color}}>
+                                <div className="col s12 m12 l4 white-text" id="mission" style={{backgroundColor: block1Color}}>
                                     <div className="icon-block">
                                         <h2 className="center">
                                             <img style={{height: '1.5em'}} src={prefixLink(rocketImg)} alt="Library Icon"/>
@@ -128,7 +128,7 @@ export default class Index extends React.Component {
                                 </div>
 
                                 {/*<div className="col s12 m4 red darken-2 white-text" id="courses">*/}
-                                <div className="col s12 m4 white-text" id="courses" style={{backgroundColor: block2Color}}>
+                                <div className="col s12 m12 l4 white-text" id="courses" style={{backgroundColor: block2Color}}>
                                     <div className="icon-block">
                                         <h2 className="center">
                                             {/*<i className="material-icons">group</i>*/}
@@ -146,7 +146,7 @@ export default class Index extends React.Component {
                                     </div>
                                 </div>
 
-                                <div className="col s12 m4 white-text" id="nuggets" style={{backgroundColor: block3Color}}>
+                                <div className="col s12 m12 l4 white-text" id="nuggets" style={{backgroundColor: block3Color}}>
                                     <div className="icon-block">
                                         <h2 className="center">
                                             <img style={{height: '1.5em'}} src={prefixLink(lightbulbImg)} alt="Library Icon"/>
