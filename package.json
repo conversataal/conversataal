@@ -35,5 +35,9 @@
   },
   "devDependencies": {
     "gatsby": "^0.12.46"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/conversataal/conversataal.github.io.git"
   }
 }
