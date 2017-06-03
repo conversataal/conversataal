@@ -16,6 +16,8 @@ nav {
 
   img {
     margin: 5px 0;
+    max-width: 221px;
+    width: 100%;
   }
 
   .material-icons.tiny {
@@ -23,11 +25,41 @@ nav {
     font-size: 1rem;
   }
 
-  .right li a {
+  .main-menu {
+    padding: 1rem 0 0 4rem;
+
+    li {
+      float: none;
+
+      a {
+        font-size: 1.4rem;
+        height: auto;
+        line-height: 1.7em;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1090px) {
+  nav .main-menu {
+    float: right;
+    padding: 0;
+
+    li {
+      display: inline-block;
+
+      a {
+        height: 210px;
+        line-height: 200px;
+        text-align: center;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1660px) {
+  nav .main-menu li a {
     font-size: 2.3rem;
-    height: 210px;
-    line-height: 200px;
-    text-align: center;
   }
 }
 

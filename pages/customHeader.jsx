@@ -44,19 +44,34 @@ class CustomHeader extends React.Component {
                     </div>
                 </div>
                 <div className="nav-wrapper container">
-                    <Link
-                        to={prefixLink('/')}
-                        className="brand-logo"
-                    >
-                        <img src={prefixLink(logoImg)} alt="Conversa School Logo"/>
-                    </Link>
-                    <ul className="right">
-                        <li><Link to={prefixLink('/#top')}>Home</Link></li>
-                        <li><a href="#courses">Cursussen</a></li>
-                        <li><a href="#nuggets">Taalweetjes</a></li>
-                        <li><a href="#mission">Missie</a></li>
-                        <li><a href="#top">Contact</a></li>
-                    </ul>
+                    <div className="row">
+                        <div className="col s6 m3">
+                            <Link
+                                to={prefixLink('/')}
+                                className=""
+                            >
+                                <img src={prefixLink(logoImg)} alt="Conversa School Logo"/>
+                            </Link>
+                        </div>
+                        <div className="col s6 m9">
+                            {/*large screen menu*/}
+                            <ul className="main-menu">
+                                <li><Link to={prefixLink('/#top')}>Home</Link></li>
+                                <li><a href="#courses">Cursussen</a></li>
+                                <li><a href="#nuggets">Taalweetjes</a></li>
+                                <li><a href="#mission">Missie</a></li>
+                                <li><a href="#top">Contact</a></li>
+                            </ul>
+                            {/*small screen menu*/}
+                            {/*<ul className="right hide-on-large-only">
+                                <Link to={prefixLink('/#top')}>Home</Link><br/>
+                                <a href="#courses">Cursussen</a><br/>
+                                <a href="#nuggets">Taalweetjes</a><br/>
+                                <a href="#mission">Missie</a><br/>
+                                <a href="#top">Contact</a><br/>
+                            </ul>*/}
+                        </div>
+                    </div>
 
                     {/*<ul className="right hide-on-med-and-down">
                         <li><Link to={prefixLink('/#top')}>Home</Link></li>
