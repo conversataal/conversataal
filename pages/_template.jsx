@@ -7,8 +7,8 @@ import '../css/font.scss';
 import '../css/markdown-styles';
 import 'materialize-css/dist/css/materialize.min';
 import '../css/main';
-import CustomHeader from './customHeader';
-import CustomFooter from './customFooter';
+import Header from '../components/Header/Header';
+import Footer from '../components/Footer/Footer';
 
 //import {rhythm} from '../utils/typography';
 
@@ -16,7 +16,7 @@ class CustomTemplate extends React.Component {
     render () {
         return (
             <div>
-                <CustomHeader/>
+                <Header/>
 
                 {this.props.children}
 
@@ -30,7 +30,7 @@ class CustomTemplate extends React.Component {
                  {this.props.children}
                  </Container>*/}
 
-                <CustomFooter/>
+                <Footer/>
             </div>
         )
     }

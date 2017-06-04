@@ -1,7 +1,7 @@
 import React, { PropTypes } from 'react';
 import { prefixLink } from 'gatsby-helpers';
 
-class CustomFooter extends React.Component {
+class Footer extends React.Component {
     render() {
         return (
             <footer className="page-footer indigo darken-3">
@@ -49,6 +49,6 @@ class CustomFooter extends React.Component {
     }
 }
 
-CustomFooter.propTypes = {};
+Footer.propTypes = {};
 
-export default CustomFooter;
+export default Footer;

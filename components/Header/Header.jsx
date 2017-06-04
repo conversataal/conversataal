@@ -1,12 +1,12 @@
 import React, { PropTypes } from 'react';
 import { Link } from 'react-router';
 import { prefixLink } from 'gatsby-helpers';
-import './customHeader.scss';
-import logoImg from '../img/logo.png';
-import fbImg from '../img/facebook.svg';
-import liImg from '../img/linkedin.svg';
+import './Header.scss';
+import logoImg from '../../img/logo.png';
+import fbImg from '../../img/facebook.svg';
+import liImg from '../../img/linkedin.svg';
 
-class CustomHeader extends React.Component {
+class Header extends React.Component {
     render() {
         return (
             <nav className="white" role="navigation" id="top">
@@ -92,6 +92,6 @@ class CustomHeader extends React.Component {
 }
 
 
-CustomHeader.propTypes = {};
+Header.propTypes = {};
 
-export default CustomHeader;
+export default Header;
