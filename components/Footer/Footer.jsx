@@ -24,7 +24,7 @@ class Footer extends React.Component {
                                 </li>
                                 <li><a className="white-text" href="#mission">Missie</a>
                                 </li>
-                                <li><a className="white-text" href="#top">Contact</a>
+                                <li><a className="white-text" href="#contact">Contact</a>
                                 </li>
                             </ul>
                         </div>

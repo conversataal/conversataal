@@ -56,7 +56,7 @@ class Header extends React.Component {
                                 <li><a href="#courses">Cursussen</a></li>
                                 <li><a href="#nuggets">Taalweetjes</a></li>
                                 <li><a href="#mission">Missie</a></li>
-                                <li><a href="#top">Contact</a></li>
+                                <li><a href="#contact">Contact</a></li>
                             </ul>
                             {/*small screen menu*/}
                             {/*<ul className="right hide-on-large-only">
