@@ -15,10 +15,12 @@ import Footer from '../components/Footer/Footer';
 class CustomTemplate extends React.Component {
     render () {
         return (
-            <div>
+            <div id="main-wrapper">
                 <Header/>
 
-                {this.props.children}
+                <section id="main-content">
+                    {this.props.children}
+                </section>
 
                 {/*<Container
                  style={{
