@@ -1,8 +1,8 @@
 import React, { PropTypes } from 'react';
-import 'materialize-css/dist/js/materialize.min';
 import styles from './Contact.module.scss';
 
 // TODO colors to indigo
+// TODO fix animations and validations from materialize on form inputs that do not work because the materialize jquery plugins cant be imported (breaks build)
 // TODO mobile
 // TODO send values
 
