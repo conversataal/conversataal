@@ -1,5 +1,5 @@
 import React, { PropTypes } from 'react';
-import styles from './Contact.module.scss';
+import TextField from '../form/TextField';
 
 // TODO colors to indigo
 // TODO fix animations and validations from materialize on form inputs that do not work because the materialize jquery plugins cant be imported (breaks build)
@@ -20,33 +20,11 @@ class Contact extends React.Component {
     render() {
         return (
             <form id="contact" onSubmit={this.sendForm}>
-                <h1 className={styles['the-css-module-class']}>
-                    css modules test
-                </h1>
+                <TextField id="contact_name" type="text" label="Uw naam"/>
+                {/*<TextField id="contact_email" type="email" label="Uw e-mail" errorMessage="Vul een geldig e-mail adres in" required={true}/>*/}
+                <TextField id="contact_email" type="email" label="Uw e-mail" required={true}/>
+                <TextField id="contact_phone" type="text" label="Uw telefoonnummer"/>
                 <div className="row">
-                    <div className="input-field col s6">
-                        {/*<input placeholder="Placeholder" id="first_name" type="text" className="validate"/>*/}
-                        <input id="contact_name" type="text"/>
-                        <label htmlFor="contact_name">Uw naam</label>
-                    </div>
-                </div>
-                <div className="row">
-                    <div className="input-field col s6">
-                        <input id="contact_email" type="email" className="validate" required/>
-                        <label htmlFor="contact_email" data-error="Vul een geldig e-mail adres in">Uw e-mail</label>
-                    </div>
-                </div>
-                <div className="row">
-                    <div className="input-field col s6">
-                        <input id="contact_phone" type="text"/>
-                        <label htmlFor="contact_phone">Uw telefoonnummer</label>
-                    </div>
-                </div>
-                <div className="row">
-                    {/*<div className="input-field col s6">
-                        <input id="contact_subject" type="text" className="validate"/>
-                        <label for="contact_subject">Last Name</label>
-                    </div>*/}
                     <div className="input-field col s6">
                         <textarea id="contact_message" type="text" className="materialize-textarea" required/>
                         <label htmlFor="contact_message">Uw bericht</label>
