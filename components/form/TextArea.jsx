@@ -40,7 +40,8 @@ class TextArea extends React.Component {
                         onFocus={this.setFocusOn}
                         onBlur={this.setFocusOff}
                         onChange={this.handleChange}
-                    >{this.state.value}</textarea>
+                        value={this.state.value}
+                    ></textarea>
                     <label
                         className={labelClassName}
                         htmlFor={this.props.id}
