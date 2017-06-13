@@ -2,13 +2,17 @@
 
   $activeColor: #1A237E;
 
-  input:focus:not([readonly]) {
-    border-bottom: 1px solid $activeColor;
-    box-shadow: 0 1px 0 0 $activeColor;
+  input, textarea {
+    &:focus:not([readonly]) {
+      border-bottom: 1px solid $activeColor;
+      box-shadow: 0 1px 0 0 $activeColor;
+    }
   }
 
-  input:focus:not([readonly]) + label {
-    color: $activeColor;
+  input, textarea {
+    &:focus:not([readonly]) + label {
+      color: $activeColor;
+    }
   }
 
   //input:invalid + label.active::after {
