@@ -6,7 +6,7 @@ class TextArea extends React.Component {
         super(props);
         this.state = {
             focus: false,
-            value: ''
+            value: this.props.value
         };
         this.setFocusOn = this.setFocusOn.bind(this);
         this.setFocusOff = this.setFocusOff.bind(this);
@@ -23,6 +23,7 @@ class TextArea extends React.Component {
 
     handleChange(event) {
         this.setState({ 'value': event.target.value });
+        this.props.handleUpdate(this.props.id, event.target.value);
     }
 
     render() {
@@ -57,6 +58,7 @@ class TextArea extends React.Component {
 TextArea.propTypes = {
     id: PropTypes.string.isRequired,
     label: PropTypes.string.isRequired,
+    value: PropTypes.string.isRequired,
     required: PropTypes.bool,
     errorMessage: PropTypes.string
 };
