@@ -2,9 +2,6 @@ import React, { PropTypes } from 'react';
 import TextField from '../form/TextField';
 import TextArea from "../form/TextArea";
 
-// TODO mobile
-// TODO send values enable url
-
 class Contact extends React.Component {
     constructor(props) {
         super(props);
@@ -20,8 +17,8 @@ class Contact extends React.Component {
 
     sendForm(e) {
         e.preventDefault();
-        //const url = 'https://formspree.io/info@conversaschool.nl';
-        const url = 'http://httpbin.org/post';
+        const url = 'https://formspree.io/info@conversaschool.nl';
+        //const url = 'http://httpbin.org/post';
         fetch(url, {
             method: 'POST',
             headers: {

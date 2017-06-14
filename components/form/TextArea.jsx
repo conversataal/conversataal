@@ -32,7 +32,7 @@ class TextArea extends React.Component {
         const labelClassName = this.state.focus || (this.state.value && this.state.value.length > 0) ? 'active' : null;
         return (
             <div className={'row ' + styles['textfield-module-wrapper']}>
-                <div className="input-field col s6">
+                <div className="input-field col s12 m6">
                     {/*<input placeholder="Placeholder" id="first_name" type="text" className="validate"/>*/}
                     <textarea
                         id={this.props.id}
