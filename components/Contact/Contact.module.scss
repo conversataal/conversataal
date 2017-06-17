@@ -1,0 +1,36 @@
+.wrapper {
+
+  $success-color: #4CAF50;
+  $error-color: #F44336;
+
+  .successMessage, .errorMessage {
+    padding: 0.5em;
+
+    i {
+      padding-right: 0.5em;
+    }
+  }
+
+  .successMessage {
+    background-color: transparentize($success-color, 0.8);
+    border: 1px solid $success-color;
+
+    i {
+      color: $success-color;
+    }
+  }
+
+  .errorMessage {
+    background-color: transparentize($error-color, 0.8);
+    border: 1px solid $error-color;
+
+    i {
+      color: $error-color;
+    }
+
+    a {
+      color: blue;
+      text-decoration: underline;
+    }
+  }
+}

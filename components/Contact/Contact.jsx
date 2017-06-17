@@ -1,6 +1,7 @@
 import React, { PropTypes } from 'react';
 import TextField from '../form/TextField';
 import TextArea from "../form/TextArea";
+import styles from './Contact.module.scss';
 
 class Contact extends React.Component {
     constructor(props) {
@@ -9,7 +10,8 @@ class Contact extends React.Component {
             contact_name: '',
             contact_email: '',
             contact_phone: '',
-            contact_message: ''
+            contact_message: '',
+            contact_result : ''
         };
         this.sendForm = this.sendForm.bind(this);
         this.handleUpdate = this.handleUpdate.bind(this);
@@ -17,8 +19,8 @@ class Contact extends React.Component {
 
     sendForm(e) {
         e.preventDefault();
-        const url = 'https://formspree.io/info@conversaschool.nl';
-        //const url = 'http://httpbin.org/post';
+        //const url = 'https://formspree.io/info@conversaschool.nl';
+        const url = 'http://httpbin.org/post';
         fetch(url, {
             method: 'POST',
             headers: {
@@ -34,10 +36,10 @@ class Contact extends React.Component {
         })
             .then(data => data.json())
             .then(data => {
-                if(data.status === 'ok') {
+                if(data.success === 'email sent') {
                     console.log(`Get completed to: ${data.fileName}`);
                 } else {
-                    throw new Error('failed');
+                    throw new Error('Send form failed');
                 }
             })
             .catch(error => console.error('error: ' + error));
@@ -50,7 +52,16 @@ class Contact extends React.Component {
     render() {
         const submitDisabled = this.state.contact_email && this.state.contact_message ? false : true;
         return (
-            <form id="contact" onSubmit={this.sendForm}>
+            <form id="contact" onSubmit={this.sendForm} className={styles.wrapper}>
+                <h2>Contact</h2>
+                <p className={styles.successMessage}>
+                    <i className="material-icons">done</i>
+                    Uw bericht is verstuurd, wij nemen zo snel mogelijk contact met u op.
+                </p>
+                <p className={styles.errorMessage}>
+                    <i className="material-icons">error</i>
+                    Er is iets fout gegaan met het versturen van uw bericht. Wilt u op een andere manier contact opnemen?
+                    Onze <a href="#top">contactgegevens</a> staan bovenaan deze pagina.</p>
                 <TextField id="contact_name" type="text" label="Uw naam" value={this.state.contact_name}
                            handleUpdate={this.handleUpdate}/>
                 {/*<TextField id="contact_email" type="email" label="Uw e-mail" errorMessage="Vul een geldig e-mail adres in" required={true}/>*/}
