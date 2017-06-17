@@ -19,8 +19,8 @@ class Contact extends React.Component {
 
     sendForm(e) {
         e.preventDefault();
-        //const url = 'https://formspree.io/info@conversaschool.nl';
-        const url = 'http://httpbin.org/post';
+        const url = 'https://formspree.io/info@conversaschool.nl';
+        //const url = 'http://httpbin.org/post';
         fetch(url, {
             method: 'POST',
             headers: {
@@ -37,31 +37,51 @@ class Contact extends React.Component {
             .then(data => data.json())
             .then(data => {
                 if(data.success === 'email sent') {
-                    console.log(`Get completed to: ${data.fileName}`);
+                    this.setState({
+                        contact_name: '',
+                        contact_email: '',
+                        contact_phone: '',
+                        contact_message: '',
+                        contact_result: 'success'
+                    });
                 } else {
                     throw new Error('Send form failed');
                 }
             })
-            .catch(error => console.error('error: ' + error));
+            .catch(error => {
+                console.error('error: ' + error);
+                this.setState({contact_result: 'error'});
+            });
     }
 
     handleUpdate(id, newValue) {
         this.setState({[id]: newValue});
     }
 
+    renderMessage() {
+        if(this.state.contact_result === 'success') {
+            return <p className={styles.successMessage}>
+                <i className="material-icons">done</i>
+                Uw bericht is verstuurd, wij nemen zo snel mogelijk contact met u op.
+            </p>
+        } else if(this.state.contact_result === 'error') {
+            return <p className={styles.errorMessage}>
+                <i className="material-icons">error</i>
+                Er is iets fout gegaan met het versturen van uw bericht. Wilt u op een andere manier contact opnemen?
+                Onze <a href="#top">contactgegevens</a> staan bovenaan deze pagina.
+            </p>
+        } else {
+            return null;
+        }
+    }
+
     render() {
         const submitDisabled = this.state.contact_email && this.state.contact_message ? false : true;
+        const message = this.renderMessage();
         return (
             <form id="contact" onSubmit={this.sendForm} className={styles.wrapper}>
                 <h2>Contact</h2>
-                <p className={styles.successMessage}>
-                    <i className="material-icons">done</i>
-                    Uw bericht is verstuurd, wij nemen zo snel mogelijk contact met u op.
-                </p>
-                <p className={styles.errorMessage}>
-                    <i className="material-icons">error</i>
-                    Er is iets fout gegaan met het versturen van uw bericht. Wilt u op een andere manier contact opnemen?
-                    Onze <a href="#top">contactgegevens</a> staan bovenaan deze pagina.</p>
+                {message}
                 <TextField id="contact_name" type="text" label="Uw naam" value={this.state.contact_name}
                            handleUpdate={this.handleUpdate}/>
                 {/*<TextField id="contact_email" type="email" label="Uw e-mail" errorMessage="Vul een geldig e-mail adres in" required={true}/>*/}
