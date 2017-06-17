@@ -20,7 +20,8 @@
     "object-assign": "^4.1.1",
     "react-ga": "^2.2.0",
     "react-helmet": "^3.2.2",
-    "toml-js": "0.0.8"
+    "toml-js": "0.0.8",
+    "caniuse-db": "1.0.30000686"
   },
   "keywords": [
     "gatsby"
