@@ -38,10 +38,10 @@ class Contact extends React.Component {
             .then(data => {
                 if(data.success === 'email sent') {
                     this.setState({
-                        contact_name: '',
-                        contact_email: '',
-                        contact_phone: '',
-                        contact_message: '',
+                        // contact_name: '',
+                        // contact_email: '',
+                        // contact_phone: '',
+                        // contact_message: '',
                         contact_result: 'success'
                     });
                 } else {
@@ -75,27 +75,38 @@ class Contact extends React.Component {
         }
     }
 
-    render() {
+    renderFormContent() {
         const submitDisabled = this.state.contact_email && this.state.contact_message ? false : true;
+        if(this.state.contact_result !== 'success') {
+            return (
+                <div>
+                    <TextField id="contact_name" type="text" label="Uw naam" value={this.state.contact_name}
+                               handleUpdate={this.handleUpdate}/>
+                    {/*<TextField id="contact_email" type="email" label="Uw e-mail" errorMessage="Vul een geldig e-mail adres in" required={true}/>*/}
+                    <TextField id="contact_email" type="email" label="Uw e-mail" value={this.state.contact_email}
+                               handleUpdate={this.handleUpdate} required={true}/>
+                    <TextField id="contact_phone" type="text" label="Uw telefoonnummer" value={this.state.contact_phone}
+                               handleUpdate={this.handleUpdate}/>
+                    <TextArea id="contact_message" label="Uw bericht" value={this.state.contact_message}
+                              handleUpdate={this.handleUpdate} required={true}/>
+                    <div className="row">
+                        <button className="btn waves-effect waves-light indigo darken-4" type="submit" disabled={submitDisabled}>Verstuur
+                            <i className="material-icons right">send</i>
+                        </button>
+                    </div>
+                </div>
+            )
+        }
+        return null;
+    }
+
+    render() {
         const message = this.renderMessage();
         return (
             <form id="contact" onSubmit={this.sendForm} className={styles.wrapper}>
                 <h2>Contact</h2>
                 {message}
-                <TextField id="contact_name" type="text" label="Uw naam" value={this.state.contact_name}
-                           handleUpdate={this.handleUpdate}/>
-                {/*<TextField id="contact_email" type="email" label="Uw e-mail" errorMessage="Vul een geldig e-mail adres in" required={true}/>*/}
-                <TextField id="contact_email" type="email" label="Uw e-mail" value={this.state.contact_email}
-                           handleUpdate={this.handleUpdate} required={true}/>
-                <TextField id="contact_phone" type="text" label="Uw telefoonnummer" value={this.state.contact_phone}
-                           handleUpdate={this.handleUpdate}/>
-                <TextArea id="contact_message" label="Uw bericht" value={this.state.contact_message}
-                          handleUpdate={this.handleUpdate} required={true}/>
-                <div className="row">
-                    <button className="btn waves-effect waves-light indigo darken-4" type="submit" disabled={submitDisabled}>Verstuur
-                        <i className="material-icons right">send</i>
-                    </button>
-                </div>
+                {this.renderFormContent()}
             </form>
         );
     }
