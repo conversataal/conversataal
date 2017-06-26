@@ -53,10 +53,10 @@ class Header extends React.Component {
                             {/*large screen menu*/}
                             <ul className="main-menu">
                                 <li><Link to={prefixLink('/#top')}>Home</Link></li>
-                                <li><a href="#courses">Cursussen</a></li>
-                                <li><a href="#nuggets">Taalweetjes</a></li>
-                                <li><a href="#mission">Missie</a></li>
-                                <li><a href="#contact">Contact</a></li>
+                                <li><a href="/#courses">Cursussen</a></li>
+                                <li><a href="/#nuggets">Taalweetjes</a></li>
+                                <li><a href="/#mission">Missie</a></li>
+                                <li><a href="/#contact">Contact</a></li>
                             </ul>
                             {/*small screen menu*/}
                             {/*<ul className="right hide-on-large-only">

@@ -125,6 +125,7 @@ export default class Index extends React.Component {
                                             originele zinnen van moet maken?<br/>
                                             Conversa School is een offline en online Poolse taalschool en onze missie is
                                             jouw kennis van de Poolse taal naar een hoger niveau te brengen!</p>
+                                        <a href="/mission/">Lees meer</a>
                                     </div>
                                 </div>
 

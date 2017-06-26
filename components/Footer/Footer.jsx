@@ -16,15 +16,15 @@ class Footer extends React.Component {
                             <ul>
                                 <li>
                                     {/*<Link className="white-text" to={prefixLink('/#top')}>Home</Link>*/}
-                                    <a className="white-text" href="#top">Home</a>
+                                    <a className="white-text" href="/#top">Home</a>
                                 </li>
-                                <li><a className="white-text" href="#courses">Cursussen</a>
+                                <li><a className="white-text" href="/#courses">Cursussen</a>
                                 </li>
-                                <li><a className="white-text" href="#nuggets">Taalweetjes</a>
+                                <li><a className="white-text" href="/#nuggets">Taalweetjes</a>
                                 </li>
-                                <li><a className="white-text" href="#mission">Missie</a>
+                                <li><a className="white-text" href="/#mission">Missie</a>
                                 </li>
-                                <li><a className="white-text" href="#contact">Contact</a>
+                                <li><a className="white-text" href="/#contact">Contact</a>
                                 </li>
                             </ul>
                         </div>
