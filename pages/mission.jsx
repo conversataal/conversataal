@@ -19,7 +19,7 @@ export default class ReactComponent extends React.Component {
                     title={`${config.siteTitle} | Missie`}
                 />
                 <div className="row" style={{marginBottom: 0}}>
-                    <div className="col s12" style={{backgroundColor: '#d9d9d9', boxShadow: 'inset 1px 4px 9px -6px #000000'}}>
+                    <div className="col s12" style={{backgroundColor: '#F4F4F4', boxShadow: 'inset 1px 4px 9px -6px #000000'}}>
                         <h3>Mission statement Conversa School</h3>
 
                         <p>
