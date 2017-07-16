@@ -22,7 +22,7 @@ class Footer extends React.Component {
                                 </li>
                                 <li><a className="white-text" href="/#nuggets">Taalweetjes</a>
                                 </li>
-                                <li><a className="white-text" href="/#mission">Missie</a>
+                                <li><a className="white-text" href="/mission/">Missie</a>
                                 </li>
                                 <li><a className="white-text" href="/#contact">Contact</a>
                                 </li>
