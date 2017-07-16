@@ -11,4 +11,4 @@ deploy:
   local_dir: public
   fqdn: www.conversaschool.nl
   on:
-    branch: src-gatsby
+    branch: production
